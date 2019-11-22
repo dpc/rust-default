@@ -5,3 +5,7 @@
 pub fn default<T:Default>()-> T {
    std::default::Default::default() // gosh, that's a lot of default, isn't it?
 }
+
+pub fn __<T:Default>()-> T {
+   default()
+}
